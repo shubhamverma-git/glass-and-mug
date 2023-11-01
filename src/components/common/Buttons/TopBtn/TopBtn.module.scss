@@ -1,0 +1,22 @@
+.arrow_icon_container {
+  background-color: rgba(171, 165, 165, 0.781);
+  // position: fixed;
+  bottom: min(50px, 4vw);
+  right: 2vw;
+  z-index: 99;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .arrow_icon {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .arrow_icon_container {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,104 @@
+@import "../../../styles//variables.scss";
+
+.container {
+  display: flex;
+  position: relative;
+  height: 388px;
+  border-radius: 10px;
+  overflow: hidden;
+  .img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+      color: $color-white;
+      font-family: $font-lato;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+    .pillContainer {
+      display: flex;
+      gap: 5px;
+      border: none;
+      h1 {
+        color: $color-tertiary;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+    }
+    .pillTitle {
+      cursor: default;
+    }
+  }
+  .btn_container {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    padding: 24px;
+    transition: bottom 0.3s ease-in-out;
+    .btn {
+      border: none;
+      width: 100%;
+      background: $color-primary;
+      padding: 15px 10px;
+      background-color: $color-primary;
+      color: $color-tertiary;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover {
+        background-color: $color-white;
+      }
+    }
+  }
+  &:hover .btn_container {
+    bottom: 0;
+    transition: bottom 0.3s ease-in-out;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #282727 10%, transparent 60%);
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    // height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: min(250px, 40vw);
+    .btn_container {
+      margin: 10px 20px;
+      bottom: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: min(200px, 40vw);
+    height: min(250px, 60vw);
+  }
+}

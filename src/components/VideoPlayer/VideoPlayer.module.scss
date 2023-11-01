@@ -1,0 +1,32 @@
+.player_container {
+  .video_player {
+    width: 100% !important;
+    height: 900px !important;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .player_container {
+    .video_player {
+      // width: 900px;
+      // height: 900px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .player_container {
+    .video_player {
+      // width: 600px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .player_container {
+    .video_player {
+      // width: 100% !important;
+    }
+  }
+}

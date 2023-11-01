@@ -1,0 +1,17 @@
+.color {
+  background-color: rgb(232, 232, 232);
+  border-radius: 5px;
+  box-shadow: rgba(164, 168, 173, 0.2) 0px 8px 24px;
+  transition: background-color 0.3s ease-in;
+}
+.card {
+  width: min(600px, 30vw);
+  height: min(400px, 30vw);
+  margin: 20px 0;
+}
+
+.text {
+  width: min(400px, 20vw);
+  height: min(30px, 5vw);
+  margin: 5px 0;
+}

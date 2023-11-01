@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .cardImage {
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .name {
+      display: flex;
+      gap: 10px;
+      h1 {
+        color: $color-tertiary;
+        font-family: $font-lato;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      .headline {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+          color: $color-tertiary;
+          font-family: $font-lato;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1.25;
+        }
+        .icon {
+          cursor: pointer;
+        }
+      }
+      .qstn {
+        p {
+          color: $color-tertiary;
+          font-family: $font-lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+      }
+      .categories {
+        display: flex;
+        gap: 20px;
+        ul {
+          display: flex;
+          gap: 20px;
+          li {
+            list-style-type: none;
+            text-align: center;
+            font-family: $font-lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.25;
+          }
+        }
+      }
+    }
+  }
+}

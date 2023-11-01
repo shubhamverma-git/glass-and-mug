@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 30px;
+  .title {
+    display: flex;
+    justify-content: center;
+    h1 {
+      color: var(--Heading, #9d6716);
+      text-align: center;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+    p {
+      color: $color-tertiary;
+      text-align: center;
+      font-family: $font-lato;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .title {
+      h1 {
+        font-size: 22px;
+      }
+    }
+    .description {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

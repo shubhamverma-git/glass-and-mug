@@ -1,0 +1,136 @@
+@import "../../styles/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  margin-top: 100px;
+  gap: 60px;
+  h1 {
+    color: $color-secondary;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .image_container {
+    display: flex;
+    gap: 20px;
+    height: 820px;
+    // background-color: orange;
+    .left_container {
+      width: 60%;
+    }
+    .right_container {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      gap: 20px;
+      .upper_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .img_container {
+          display: flex;
+          flex-direction: column;
+          .right_img {
+            width: 100%;
+          }
+        }
+      }
+
+      .scroll {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+        }
+        .text {
+          p {
+            text-align: center;
+            color: $color-brown;
+            font-family: $font_lato;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  .mobview_container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    .image_container {
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .image_container {
+      flex-direction: column;
+      height: 400px;
+      gap: 40px;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .left_container {
+        width: 100%;
+        .video {
+          height: 400px;
+        }
+      }
+      .right_container {
+        width: 100%;
+        .scroll {
+          display: none;
+        }
+      }
+    }
+    .mobview_container {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      .text {
+        p {
+          text-align: center;
+          color: $color-brown;
+          font-family: $font_lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

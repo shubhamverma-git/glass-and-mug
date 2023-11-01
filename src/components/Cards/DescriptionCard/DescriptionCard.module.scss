@@ -1,0 +1,61 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  gap: 20px;
+  font-family: $font-lato;
+  margin-top: 60px;
+  .card {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .icon_container {
+      display: flex;
+      justify-content: center;
+      .card_img {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .card_desc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5px;
+      .title {
+        text-align: center;
+        color: $color-black;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+      .description {
+        text-align: center;
+        width: 100%;
+        color: $color-black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    .card {
+      width: 200px;
+      .icon_container {
+        .card_img {
+          width: 65px;
+          height: 65px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  .pill_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+    .upper_container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .tag {
+        display: flex;
+        justify-content: space-between;
+        .title {
+          display: flex;
+          align-items: center;
+          h1 {
+            color: $color-secondary;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.5;
+          }
+        }
+        .btn {
+          color: $color-secondary;
+          &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+          }
+        }
+      }
+      .pills {
+        display: flex;
+        gap: 20px;
+      }
+    }
+    .lower_container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+      gap: 20px;
+      .title {
+        h1 {
+          color: $color-secondary;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+      }
+    }
+    .pill_container_filter {
+      border: 1px solid $color-secondary;
+      &:hover {
+        background-color: $color-secondary;
+        h1 {
+          color: white;
+        }
+      }
+    }
+  }
+  .cardContainer {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  // .btn_container {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   padding: 0 40px;
+  //   .btns {
+  //     padding: 0 100px;
+  //     display: flex;
+  //     width: 60%;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     .more_product {
+  //       .top_btn {
+  //         display: flex;
+  //         flex-direction: column;
+  //         align-items: center;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    .btn_container {
+      .btns {
+        padding: 0;
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .btn_container {
+      .btns {
+        padding: 0;
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .pill_container {
+      .upper_container {
+        .btn {
+          display: none;
+        }
+      }
+    }
+    .cardContainer {
+      padding: 15px;
+      gap: 15px;
+    }
+  }
+  .top_arrow_btn {
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    .btn_container {
+      display: flex;
+      flex-direction: column;
+      .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        justify-content: center;
+        .top_btn {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

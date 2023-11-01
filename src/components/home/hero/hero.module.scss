@@ -1,0 +1,153 @@
+@import "@/styles/variables";
+.container {
+  margin: 40px 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .heroImage {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 488px;
+    width: 100%;
+    // margin: 40px 30px;
+  }
+  .headline {
+    padding: 0 15px;
+    h1 {
+      color: $color-secondary;
+      text-align: center;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: min(20px, 5vw);
+    padding: 30px 40px;
+    margin-top: -70px;
+    border-radius: 10px;
+    background-color: $color-highlight;
+    justify-content: center;
+    align-self: center;
+    width: 70vw;
+    max-width: 70vw;
+    .statsBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      color: $color-primary;
+      h2 {
+        color: $color-primary;
+        font-family: $font-lato;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: $color-primary;
+        font-family: $font-lato;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.25;
+      }
+    }
+  }
+}
+.mob_container {
+  display: none;
+  margin-top: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: min(20px, 3vw);
+    padding: 25px 15px;
+    background-color: $color-highlight;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+    .statsBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: $color-primary;
+      h2 {
+        color: $color-primary;
+        font-family: $font-lato;
+        font-size: min(24px, 3.5vw);
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: $color-primary;
+        font-family: $font-lato;
+        font-size: min(16px, 3vw);
+        font-weight: 500;
+        line-height: 1.25;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    .statsContainer {
+      .statsBlock {
+        h2 {
+          font-size: 36px;
+        }
+        h3 {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .headline {
+      h1 {
+        font-size: 24px;
+      }
+    }
+    .statsContainer {
+      align-items: start;
+      width: 100%;
+      .statsBlock {
+        h2 {
+          font-size: 34 px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 40px !important;
+    margin: 0 15px;
+    .heroImage {
+      border-radius: 10px;
+      height: 300px;
+    }
+    .statsContainer {
+      display: none;
+    }
+  }
+  .mob_container {
+    display: block;
+  }
+}

@@ -1,0 +1,7 @@
+import axios from "axios";
+
+export function getHomeData() {
+  return axios.get(
+    "https://osmicglass.droot.in/api/homepage?populate=hero_container.hero_banner,hero_container.matrices,process_container.section_block,process_container.home_process_block.image,category_section_container.Category_container.category_section_details,category_section_container.Category_container.category_section_banner.image,category_section_container.Category_container.category_section_side_image.image,home_material.home_material_section_block,home_material.materials.image,manufacturing_section.manufacturing_header,manufacturing_section.manufacturing_image.image,explore_section,testimonial_container.testimonial_header,testimonial_container.testimonials,testimonial_container.testimonials.image,enquiry_container,product_gallery.gallery_header"
+  );
+}

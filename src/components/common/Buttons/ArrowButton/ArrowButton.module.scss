@@ -1,0 +1,27 @@
+@import "../../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0px;
+  border: 1px solid $color-secondary;
+  border-radius: 5px;
+  gap: 15px;
+  font-family: $font-lato;
+  padding: 13px 3px 13px 40px;
+  color: $color-secondary;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  .arrow_icon {
+    font-size: 26px;
+  }
+  &:hover {
+    color: $color-white;
+    background-color: $color-secondary;
+    transition: 0.5s;
+  }
+}

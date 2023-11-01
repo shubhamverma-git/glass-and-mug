@@ -1,0 +1,369 @@
+@import "../../styles//variables.scss";
+
+.container {
+  margin-top: 100px;
+  padding: 80px 30px 40px;
+  width: 100%;
+  background-color: $color-highlight;
+  color: $color-primary;
+  font-family: $font-lato;
+  .upper_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .left_container {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      gap: 20px;
+      .logo {
+        margin: 0;
+        padding: 0;
+        .footer_logo {
+          width: 180px;
+          height: 85px;
+        }
+      }
+      .desc {
+        width: 70%;
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.6;
+        }
+      }
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 15px;
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5;
+        }
+        .input_container {
+          display: flex;
+          input {
+            outline: none;
+            width: 40%;
+            font-size: 16px;
+            font-family: $font-lato;
+            font-weight: 500;
+            padding: 6px 10px;
+            border-radius: 4px 0 0 4px;
+            color: $color-primary;
+            border: 0.8px solid $color-primary;
+            border-right: none;
+            background-color: transparent;
+          }
+          .subscribe_btn {
+            border-radius: 0px 4px 4px 0px;
+            border: 0.8px solid $color-primary;
+            padding: 6px 10px;
+            color: $color-primary;
+            background-color: transparent;
+            text-align: center;
+            font-size: 16px;
+            font-family: $font-lato;
+            font-weight: 500;
+            line-height: 1.5;
+            transition: 0.5s;
+            &:hover {
+              background-color: $color-primary;
+              color: $color-highlight;
+            }
+          }
+        }
+      }
+    }
+    .right_container {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      .page_links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .title {
+          h2 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.25;
+          }
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          a {
+            font-size: 16px;
+            font-style: normal;
+            width: 100%;
+            font-weight: 500;
+            line-height: 1.5;
+            width: 100%;
+            // display: inline-block;
+            // position: relative;
+
+            // &::after {
+            //   content: "";
+            //   width: 0px;
+            //   height: 2px;
+            //   position: absolute;
+            //   top: 100%;
+            //   left: 0;
+            //   background: black;
+            //   transition: 300ms;
+            // }
+
+            // &:hover::after {
+            //   width: 100%;
+            // }
+
+            // &:not(:hover)::after {
+            //   right: 0;
+            //   left: auto;
+            // }
+          }
+        }
+      }
+      .address {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .address_title {
+          h1 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.25;
+          }
+        }
+        .address_text {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+          }
+        }
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .contact_title {
+          h1 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.5;
+          }
+        }
+        .phone_email {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  hr {
+    margin-top: 80px;
+  }
+  .lower_container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .social_media {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      a {
+        font-size: 30px;
+      }
+    }
+    .text {
+      a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+    .rights {
+      p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .upper_container {
+      .left_container {
+        gap: 10px;
+        .logo {
+          .footer_logo {
+            width: 117px;
+            height: 50px;
+          }
+        }
+        .desc {
+          p {
+            // font-size: 11px;
+          }
+        }
+        .subscribe {
+          p {
+            // font-size: 11px;
+          }
+          .input {
+            // font-size: 11px;
+          }
+          .subscribe_btn {
+            // font-size: 11px;
+          }
+        }
+      }
+      .right_container {
+        gap: 10px;
+        .page_links {
+          .title {
+            h2 {
+              // font-size: 14px;
+            }
+          }
+          .links {
+            a {
+              // font-size: 11px;
+            }
+          }
+        }
+        .address {
+          .address_title {
+            h1 {
+              // font-size: 14px;
+            }
+          }
+          .address_text {
+            p {
+              // font-size: 11px;
+            }
+          }
+        }
+        .contact {
+          .contact_title {
+            h1 {
+              // font-size: 14px;
+            }
+          }
+          .phone_email {
+            p {
+              // font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    .lower_container {
+      .text {
+        a {
+          // font-size: 11px;
+        }
+      }
+      .rights {
+        p {
+          // font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px 15px;
+    .upper_container {
+      flex-direction: column;
+      margin-bottom: 40px;
+      gap: 40px;
+      .left_container {
+        width: 100%;
+        .desc {
+          width: 60%;
+        }
+        .subscribe {
+          .input_container {
+            input {
+              width: 30%;
+            }
+          }
+        }
+      }
+      .right_container {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        .page_links {
+          gap: 12px;
+        }
+        .address {
+          gap: 12px;
+        }
+        .contact {
+          gap: 12px;
+        }
+      }
+    }
+    .lower_container {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      .social_media {
+        justify-content: start;
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 50px 15px;
+    .upper_container {
+      .left_container {
+        .desc {
+          width: 100%;
+        }
+      }
+      flex-direction: column;
+      .left_container {
+        .subscribe {
+          .input_container {
+            input {
+              width: 40%;
+            }
+            .subscribe_btn {
+              // font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "@/styles/variables";
+.container {
+  margin-top: 120px;
+}
+.data {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.image_container {
+  padding: 10px;
+  .image {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.productHeading {
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 18px;
+    margin-top: 32px;
+    font-weight: 400;
+    font-family: $font-lato;
+  }
+}
+
+.attributes {
+  margin-top: 32px;
+}
+
+.attribute_container {
+  align-items: center;
+  h3 {
+    font-family: $font-lato;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}

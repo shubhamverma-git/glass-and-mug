@@ -1,0 +1,297 @@
+@import "../../../styles//variables.scss";
+
+.container {
+  h1 {
+    color: $color-primary;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .contact_form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .name {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      width: 100%;
+      .fname {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 50%;
+        label {
+          color: $color-tertiary;
+          font-family: $font-lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        input {
+          padding: 10px;
+          background-color: transparent;
+          border-radius: 4px;
+          border: 1px solid $color-tertiary;
+          outline: none;
+          .error_content {
+            border: 1px solid red;
+          }
+        }
+      }
+      .lname {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 50%;
+        label {
+          color: $color-tertiary;
+          font-family: $font-lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        input {
+          padding: 10px;
+          background-color: transparent;
+          border-radius: 4px;
+          border: 1px solid $color-tertiary;
+          outline: none;
+        }
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      width: 100%;
+      .email {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 50%;
+        label {
+          color: $color-tertiary;
+          font-family: $font-lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        input {
+          padding: 10px;
+          background-color: transparent;
+          border-radius: 4px;
+          border: 1px solid $color-tertiary;
+          outline: none;
+        }
+      }
+      .phone {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 50%;
+        label {
+          color: $color-tertiary;
+          font-family: $font-lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+        .country_code_container {
+          border: 1px solid $color-tertiary;
+          display: flex;
+          .country_code {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px 0 0 4px;
+            border-right: none !important;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            // border: 1px solid $color-tertiary;
+            .country_option {
+              color: $color-tertiary;
+              font-family: $font-lato;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.25;
+              cursor: pointer;
+            }
+          }
+
+          input {
+            padding: 10px;
+            background-color: transparent;
+            // border-radius: 0 4px 4px 0;
+            width: 100%;
+            border-left: none !important;
+            border: 1px solid $color-tertiary;
+            border: none;
+            outline: none;
+            /* Chrome, Safari, Edge, Opera */
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            /* Firefox */
+            // input[type="number"] {
+            //   -moz-appearance: textfield;
+            // }
+          }
+        }
+      }
+    }
+    .message_textarea {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      label {
+        color: $color-tertiary;
+        font-family: $font-lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      .msg_text {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid $color-tertiary;
+        color: $color-tertiary;
+        background-color: transparent;
+        font-family: $font-lato;
+        height: 100px;
+        font-size: 16px;
+        overflow-y: scroll;
+        font-weight: 400;
+        padding: 10px 6px;
+        line-height: 1.5;
+        outline: none;
+        resize: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+    .upload {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      label {
+        color: $color-tertiary;
+        font-family: $font-lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+      }
+      .text_area {
+        width: 100%;
+        background-color: transparent;
+        border-radius: 4px;
+        height: 120px;
+        border: 1px dashed $color-tertiary;
+        outline: none;
+        resize: none;
+      }
+    }
+    .btn_container {
+      display: flex;
+      margin-top: 40px;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 185px;
+        height: 45px;
+        background-color: transparent;
+        color: $color-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px 15px;
+        gap: 8px;
+        border-radius: 4px;
+        border: 1px solid $color-secondary;
+        &:hover {
+          transition: 0.5s;
+          background-color: $color-secondary;
+          color: $color-white;
+        }
+      }
+    }
+  }
+  .error_content {
+    border: 1px solid red !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .name {
+      flex-direction: column;
+      .fname {
+        width: 100%;
+      }
+      .lname {
+        width: 100%;
+      }
+    }
+    .contact {
+      flex-direction: column;
+      .email {
+        width: 100%;
+      }
+      .phone {
+        width: 100%;
+      }
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    h1 {
+      font-size: 22px !important;
+    }
+    .contact_form {
+      padding: 0 15px;
+      gap: 20px;
+      .name {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .fname {
+          width: 100%;
+        }
+        .lname {
+          width: 100%;
+        }
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .email {
+          width: 100%;
+        }
+        .phone {
+          width: 100%;
+        }
+      }
+      .btn {
+        font-size: 14px;
+      }
+    }
+  }
+}
