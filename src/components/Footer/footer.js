@@ -67,11 +67,6 @@ export default function Footer() {
         <div className={classes.social_media}>
           <SocialMedia />
         </div>
-        <div className={classes.text}>
-          <Link href={"https://www.droot.in/"} target="_blank">
-            Designed and Developed by Droot
-          </Link>
-        </div>
         <div className={classes.rights}>
           <p>©2022 Osmic Glass. All rights reserved</p>
         </div>
